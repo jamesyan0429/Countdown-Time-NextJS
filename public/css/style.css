@@ -1,0 +1,160 @@
+/*
+
+1. Comming Soon Page
+
+*/
+
+/* ===============================================
+    8. Comming Soon Page
+------------------------*/
+.coming-soon-page {
+  background-image: url("/images/coming_soon/coming_soon_banner.png");
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coming-soon-page .logo-img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+}
+
+.coming-soon-page .time-count-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-soon-page .time-count-section .time-circle {
+  width: 90px;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-right: 50px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-soon-page .time-count-section .time-circle:first-child {
+  background-color: #df4141;
+  color: #ffffff;
+}
+
+.coming-soon-page .time-count-section .time-circle:last-child {
+  margin-right: 0;
+}
+
+.coming-soon-page .time-count-section .time-circle span {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.coming-soon-page .time-count-section .time-circle label {
+  font-size: 12px;
+  margin: 0;
+}
+
+.coming-soon-page .description-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  text-align: center;
+  margin: 50px auto 30px;
+  color: #ffffff;
+}
+
+.coming-soon-page .description-section h1 {
+  color: #ffffff;
+}
+
+.coming-soon-page .email-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.coming-soon-page .email-section input {
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: unset;
+  color: #ffffff;
+  padding: 10px 20px;
+  width: 350px;
+}
+
+.coming-soon-page .email-section button {
+  width: 60px;
+  height: 40px;
+  background-color: #ffffff;
+  border: unset;
+  border-radius: 20px;
+  color: #df4141;
+  font-size: 24px;
+  padding-top: 0px;
+  position: absolute;
+  right: calc(50% - 170px);
+}
+
+.coming-soon-page .social-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  left: calc(50% - 60px);
+}
+
+.coming-soon-page .social-section ul li {
+  margin-right: 30px;
+}
+
+.coming-soon-page .social-section ul li:last-child {
+  margin-right: 0px;
+}
+
+.coming-soon-page .social-section ul li a {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 575px) {
+  .coming-soon-page .logo-img {
+    width: 150px;
+  }
+  .coming-soon-page .time-count-section .time-circle {
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+  }
+  .coming-soon-page .time-count-section .time-circle span {
+    font-size: 22px;
+  }
+  .coming-soon-page .time-count-section .time-circle label {
+    font-size: 8px;
+  }
+  .coming-soon-page .description-section h1 {
+    font-size: 28px;
+  }
+  .coming-soon-page .email-section input {
+    width: 300px;
+    padding: 5px 20px;
+  }
+  .coming-soon-page .email-section button {
+    right: calc(50% - 140px);
+    height: 30px;
+    width: 50px;
+  }
+}

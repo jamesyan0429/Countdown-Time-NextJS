@@ -1,0 +1,11 @@
+html {
+  padding: 50px;
+  font-family: sans-serif;
+}
+html h1 {
+  text-align: center;
+}
+html h2 {
+  text-align: center;
+  color: grey;
+}

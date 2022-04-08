@@ -1,0 +1,211 @@
+/**
+  * Name: Countdown Time ReactJS
+  * Version: 1.0
+  * Author: Full Stack Developer
+  * Author URI: https://github.com/jamesyan0429
+*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700&display=swap");
+/* hide show mixin */
+/**
+
+  1. General
+     - Variables
+     - Shadow
+     - Extra-outer
+
+  2. Pre-loader
+
+  3. Footer
+
+**/
+/* ===============================================
+    1. General
+------------------------*/
+/** Variables **/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+:focus {
+  outline: none !important;
+}
+
+a {
+  color: #263045;
+}
+
+a:not([href]) {
+  color: #263045;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #2d4a8a;
+  cursor: pointer;
+}
+
+a, button, input {
+  outline: medium none;
+  color: #263045;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+ol, ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+iframe {
+  width: 100%;
+  border: none;
+  display: block;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+::-moz-selection {
+  background: #2d4a8a;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #2d4a8a;
+  color: #fff;
+  text-shadow: none;
+}
+
+.form-control {
+  padding: 17px 24px;
+  height: auto;
+  border-radius: 0;
+  border: 1px solid transparent;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #263045;
+}
+
+textarea:focus, input:focus {
+  border: 1px solid #2d4a8a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #6e6e6e;
+  background-color: #fff;
+  letter-spacing: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #263045;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+/**  Shadow **/
+.box-shadow {
+  -webkit-box-shadow: 0 0 12px 0 rgba(32, 46, 60, 0.06);
+          box-shadow: 0 0 12px 0 rgba(32, 46, 60, 0.06);
+}
+
+.box-shadow2 {
+  -webkit-box-shadow: 0 0 15px 0 rgba(32, 46, 60, 0.12);
+          box-shadow: 0 0 15px 0 rgba(32, 46, 60, 0.12);
+}
+
+/**  Extra-outer **/
+body .page {
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+body .page .site-main {
+  padding: 0;
+  background-color: #fff;
+}
+
+/* ===============================================
+    2. Pre-loader
+------------------------*/
+#preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin: -30px 0 0 -30px;
+}
+
+#status {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background: #fff;
+  background-image: url(../images/pre-loader-1.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ===============================================
+    3. Footer
+------------------------*/
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.social-icons li {
+  display: inline-block;
+  border: none;
+  margin: 0 3px;
+}
+
+.social-icons.square li > a {
+  border: 1px solid #e8ecef;
+  height: 33px;
+  width: 33px;
+  line-height: 33px;
+  text-align: center;
+  display: block;
+  font-size: 13px;
+  border-radius: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background-color: #f7f9fe;
+}
+
+.social-icons.square li > a:hover {
+  background-color: #2d4a8a;
+  color: #fff;
+  border-color: #2d4a8a;
+}
